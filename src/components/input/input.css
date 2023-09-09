@@ -1,0 +1,193 @@
+.input-container{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+  position: relative;
+}
+
+.input-top-img{
+  width: 100%;
+  height: 65px;
+  margin-bottom: 80px;
+  background: rgb(47,252,58);
+  background: linear-gradient(51deg, rgba(47,252,58,1) 22%, rgba(47,174,252,1) 78%);
+  border-radius: 0px 0px 0px 0px;
+}
+
+.input-title{
+  /* border: 1px solid black; */
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  padding: 15px 40px;
+  border-radius: 20px;
+  background-color: rgba(214,214,214, 0.8);
+  backdrop-filter: blur(7px);
+}
+
+.form-title{
+  /* border: 1px solid black; */
+  border-top-right-radius: 20px;
+  background-color: #000;
+  color: white;
+  width: 160px;
+  padding: 10px;
+  outline: none;
+  position:relative;
+}
+
+/* https://blog.logrocket.com/how-to-create-fancy-corners-in-css/ */
+.form-title::after{
+  content: "";
+  position:absolute;
+  top: 22px;
+  left: 100%;
+  height:50%;
+  aspect-ratio: 1;
+  border-bottom-left-radius: 50%;
+  background:transparent;
+  box-shadow: -10px 0px 0 0 #000;
+}
+
+.limit-form{
+  /* border: 1px solid black; */
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  background-color: #2FFC3A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.limit-section-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.limit-section{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.east-icon{
+  position: absolute;
+  top: 35px;
+}
+
+.limit-select-box,
+.limit-input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border:none;
+  outline: 2px dashed black;
+}
+
+.submit-limit{
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.input-form{
+  /* border: 1px solid black; */
+  background-color: #2FAEFC;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  /* margin-bottom: 40px; */
+}
+
+.input-noti{
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  opacity: 0;
+  padding: 8px;
+  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+  border-radius: 10px;
+}
+
+.input-noti.active{
+  opacity: 1;
+  top: -50px;
+  transition: all .5s ease-in-out;
+}
+
+.input-section{
+  /* border: 1px solid black; */
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.input-select-box{
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 2px dashed black;
+}
+
+.input-text{
+  width: 45%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 2px dashed black;
+  border: none;
+  margin-top: 20px;
+  position: relative;
+}
+
+.input-text.date::before{
+  content: "Today's Date by Default!";
+  position: absolute;
+  left: 30%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #2FAEFC;
+}
+
+.submitBtn{
+  margin-top: 40px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  margin-inline: auto;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.submitBtn:hover,
+.submit-limit:hover{
+  background-color: white;
+  color: black;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}

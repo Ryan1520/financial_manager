@@ -1,0 +1,77 @@
+:root{
+  --expense-ratio: 0;
+}
+
+.budget-card{
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  background-color: #E8E8E8;
+  padding-block: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.top-card{
+  border-bottom: 2px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-card h2{
+  /* border: 1px solid black; */
+  padding-right: 30px;
+  border-radius: 0px 40px 0px 0px;
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+}
+
+.top-card h4{
+  /* border: 1px solid black; */
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.middle-card{
+  /* border: 1px solid black; */
+  margin-inline: 10px;
+  padding: 20px 0px;
+}
+
+.budget-bar{
+  width: 100%;
+  height: 20px;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+}
+
+.expense-bar{
+  height: 100%;
+  background: rgb(47,90,255);
+  background: linear-gradient(104deg, rgba(47,90,255,1) 58%, rgba(0,255,42,1) 81%);
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.expense-bar.red{
+  background: rgb(47,90,255);
+  background: linear-gradient(104deg, rgba(47,90,255,1) 58%, rgba(255,72,72,1) 81%);
+}
+
+.bottom-card{
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-card button{
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.bottom-card button:hover{
+  transform: translate(-4px, -4px);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}

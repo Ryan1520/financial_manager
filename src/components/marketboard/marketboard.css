@@ -1,0 +1,165 @@
+.marketboard-container{
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.marketboard-top{
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-inline: auto;
+  height: 100px;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D8C4B6;
+}
+
+.marketboard-top .left{
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  width: 30%;
+  height: 100%;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #213555;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.nasdaq-link{
+  /* border: 1px solid black; */
+  text-decoration: none;
+}
+
+.nasdaq-link button{
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nasdaq-logo{
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.nasdaq-link button img{
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.nasdaq-link button span{
+  /* border: 1px solid black; */
+  width: 70%;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38B4D0;
+}
+
+.stock-input-wrapper{
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  height: 40%;
+}
+
+.stock-input-wrapper input{
+  padding: 8px;
+  height: 100%;
+  border: none;
+  border-radius: 15px 0px 0px 15px;
+  outline: none;
+  background-color: #38B4D0
+}
+
+.stock-input-wrapper input:focus{
+  outline: 1px solid black;
+  background-color: white;
+}
+
+.stock-input-wrapper input::placeholder{
+  color: black
+}
+
+.stock-input-wrapper button{
+  padding: 8px;
+  height: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #FAC7C3;
+}
+
+.stock-input-wrapper button:hover{
+  background-color: #30A2FF;
+}
+
+.marketboard-top .right{
+  border: 2px dashed black;
+  border-radius: 15px;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+}
+
+.marketboard-top .right h3{
+  /* border: 1px solid black; */
+  border-bottom-right-radius: 15px;
+  width: 50%;
+  padding: 0px 10px;
+  background-color: #213555;
+  color: white;
+}
+
+.marketboard-top .right h1{
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 45px; 
+  color: #213555
+}
+
+.marketboard-bottom{
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-inline: auto;
+  height: calc(100vh - 100px);
+  padding: 20px 40px;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-auto-rows: 50%;
+  gap: 20px;
+  overflow-y: scroll;
+  background-color: #F5EFE7;
+}
+
+
+
+
+
+
+
+

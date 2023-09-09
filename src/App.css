@@ -1,0 +1,71 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* the 'react-scroll' and 'snap-scroll' were conflicted each other? */
+/* html {scroll-snap-type: y mandatory} */
+
+.app-icon{
+  position: fixed;
+  top: 30%;
+  z-index: 9999;
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20%;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #FFA559;
+  transition: all .1s ease-in-out;
+}
+
+.app-icon:hover{
+  width: 40px;
+}
+
+.app-icon::before,
+.app-icon::after{
+  content: "";
+  position:absolute;
+  left:0;
+  height:40px;
+  width: 20px;
+  background: transparent;
+}
+
+.app-icon::before{
+  top: -40px;
+  border-bottom-left-radius: 50%;
+  box-shadow: 0 20px 0 0 #FFA559;
+}
+
+.app-icon::after{
+  top: 100%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 -20px 0 0 #FFA559;
+}
+
+.app-wrapper{
+  margin-left: 270px;
+  width: calc(100vw - 285px);
+  overflow: hidden;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+  background-color: #FF6000;
+  transition: all .3s ease-in-out;
+}
+
+.app-wrapper.full{
+  margin-left: 0;
+  width: calc(100vw - 15px);
+  /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+  background-color: #FF6000;
+  transition: all .3s ease-in-out;
+}
+
+
+

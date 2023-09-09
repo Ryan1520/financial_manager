@@ -1,0 +1,62 @@
+table, th, td {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+}
+
+.expensetable-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.expensetable-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.expensetable-top h1{
+  margin-block: 0px 20px;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  padding: 10px 20px;
+}
+
+.expensetable-bottom{
+  margin: 30px 20px
+}
+
+.expensetable-bottom table th{
+  min-width: 150px;
+  padding: 7px;
+}
+
+.expensetable-bottom table td{
+  min-width: 150px;
+  padding: 5px 7px;
+  text-align: center;
+}
+
+.row-clear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: all .1s linear;
+}
+
+.row-clear:hover{
+  width: 50%
+}
