@@ -16,8 +16,8 @@ export const useAPI = (yahoo_url, twelve_url, lists, results) => {
           symbol: lists.join(',')
         },
         headers: {
-          'X-RapidAPI-Key': 'ae8f4e898cmsha3f6a23b6ed2698p185c52jsn633b86d1d72d',
-          'X-RapidAPI-Host': 'mboum-finance.p.rapidapi.com'
+          'X-RapidAPI-Key': process.env.REACT_APP_YAHOO_API_KEY,
+          'X-RapidAPI-Host': process.env.REACT_APP_YAHOO_API_HOST
         }
       };
 
@@ -31,8 +31,8 @@ export const useAPI = (yahoo_url, twelve_url, lists, results) => {
             params: {symbol: symb},
             headers: {
               // https://bobbyhadz.com/blog/react-not-reading-env-file-environment-variables#:~:text=If%20you%20get%20undefined%20when,env%20file.
-              'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-              'X-RapidAPI-Host': process.env.REACT_APP_API_HOST
+              'X-RapidAPI-Key': process.env.REACT_APP_TWELVE_API_KEY,
+              'X-RapidAPI-Host': process.env.REACT_APP_TWELVE_API_HOST
             }
           }
           const response = await axios.request(options)

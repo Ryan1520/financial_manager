@@ -13,8 +13,8 @@ export const useNews = (date) => {
           method: 'GET',
           url: `https://reuters-business-and-financial-news.p.rapidapi.com/article-date/${date}`,
           headers: {
-            'X-RapidAPI-Key': 'ae8f4e898cmsha3f6a23b6ed2698p185c52jsn633b86d1d72d',
-            'X-RapidAPI-Host': 'reuters-business-and-financial-news.p.rapidapi.com'
+            'X-RapidAPI-Key': process.env.REACT_APP_REUTER_API_KEY,
+            'X-RapidAPI-Host': process.env.REACT_APP_REUTER_API_HOST
           }
         };
 
